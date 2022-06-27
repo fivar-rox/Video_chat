@@ -3,7 +3,7 @@
 This is a webRTC based video chatting web application. The users can register and get logged in to their user page. They can either create a new room or use their previous rooms to join a call and chat. This implementation also consists of a real time chat and file share functionality.
 
 #
-[Project deployed link](https://evening-basin-41332.herokuapp.com/)<br />
+[Project deployed link](https://evening-basin-41332.herokuapp.com/)<br /> (not Functional Yet, Use getting started for more info)
 
 # Features and Functionalities
 * Unlimited number of rooms 
@@ -19,7 +19,7 @@ This is a webRTC based video chatting web application. The users can register an
 * Recording your stream, audio and video 
 * Full Screen Mode on double click on the video  
 
-# Demo
+# Demo (Not functional yet)
 * Open https://evening-basin-41332.herokuapp.com/
 * Create an account
 * Set a meeting name to create your room
@@ -28,20 +28,12 @@ This is a webRTC based video chatting web application. The users can register an
 * Share the room link for others to join 
 
 # ScreenShots
-* Login/Register page<br/>
-![startpage](https://github.com/shreya28302/video-call/blob/master/screenshots/startpage.png)
-* User(Your) Page<br />
-![userpage](https://github.com/shreya28302/video-call/blob/master/screenshots/userpage.png)
-* Call Room<br />
-![callpage](https://github.com/shreya28302/video-call/blob/master/screenshots/callpage.png)
-* Chat Room<br />
-![chatpage](https://github.com/shreya28302/video-call/blob/master/screenshots/chatpage.png)
-
+Will be uploaded soon!!
 
 # Getting Started
 * You need to have Node.js installed
 * clone this repo
-  * git clone https://github.com/shreya28302/video-call.git
+  * git clone https://github.com/fivar-rox/Video_chat.git
   * cd video-call
 * Install dependencies
   * npm install
