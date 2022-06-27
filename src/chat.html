@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Teams</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icon.png"/>
+    
+    <link rel="stylesheet" href="/css/chat.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    
+  </head>
+
+  <body onload="Chat()">
+
+    <!-- show this before to join -->
+    <div id="loadingDiv"><h1 style="font-size: 70px;">Loading...</h1></div>
+
+    <section id="users">
+      <main>
+        <p style="color:#9477CB; font-weight:bold;" id="meetingName"></p>
+        <p style="font-size:0.8em; color:white;" id="createdBy"></p>
+        <br />
+        <button id="shareRoomBtn" class="fas fa-user-plus"></button>
+        <button id="joinCallBtn" class="fa fa-phone"></button>
+        <button id="leaveRoomBtn" class="fa fa-sign-out"></button>
+        <br />
+        <div>
+          <p style="color:white; font-size:1em; font-weight:bold;">Participants <small>(online in both chat and call of this room) :</small></p><br />
+          <main id="participantsBox" class="participants-box">
+            <div id="participantsList"></div>
+          </main>
+        </div>
+      </main>
+    </section>
+
+    <!-- Start chat room -->
+    <section id="msgerDraggable" class="msger-draggable">
+      <section id="msger" class="msger">
+        <header id="msgerHeader" class="msger-header">
+          <div class="msger-header-title">
+            <i class="fas fa-comment-alt"></i> Chat
+          </div>
+          <div class="msger-header-options">
+            <button id="msgerIBtn" class="fas fa-user"></button>
+          </div>
+        </header>
+
+        <main id="msgerChat" class="msger-chat">
+        </main>
+
+        <div class="msger-inputarea">
+          <input id="msgerInput" class="msger-input" type="text" placeholder="Enter your message..." />
+          <button id="msgerSendBtn" class="fas fa-paper-plane"></button>
+        </div>
+      </section>
+
+      <section id="msgerI">
+        <section id="msgerISec" class="msger">
+          <header id="msgerIHeader" class="msger-individual-header">
+            <div class="msger-header-title">
+              <i class="fas fa-comment-alt"></i> individual messages
+            </div>
+            <div class="msger-header-options">
+              <button id="msgerICloseBtn" class="fas fa-times"></button>
+            </div>
+          </header>
+          <main id="msgerIChat" class="msger-chat">
+            <div id="msgerIList"></div>
+          </main>
+        </section>
+      </section>
+      
+    </section>
+    <!-- End chat room -->
+
+
+    <!-- Js scripts -->
+    <script src="https://kit.fontawesome.com/d2f1016e6f.js" crossorigin="anonymous"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="https://cdn.rawgit.com/muaz-khan/DetectRTC/master/DetectRTC.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+    <!-- end of Js scripts -->
+
+		</body>
+</html>
