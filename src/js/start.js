@@ -27,13 +27,13 @@ $('.login-reg-panel input[type="radio"]').on('change', function() {
 
 // set up firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyBU4FO5YbU0wCi4DR2Dqbj7kCGeOMKNpyI",
-  authDomain: "ms-teams-414ee.firebaseapp.com",
-  databaseURL: "https://ms-teams-414ee-default-rtdb.firebaseio.com",
-  projectId: "ms-teams-414ee",
-  storageBucket: "ms-teams-414ee.appspot.com",
-  messagingSenderId: "587982795894",
-  appId: "1:587982795894:web:72322e5e8055d40e2b9b57",
+    apiKey: "AIzaSyAleq14mqAPtFgT5hwZhIlGOimcmHHDUkg",
+    authDomain: "noob-meet.firebaseapp.com",
+    projectId: "noob-meet",
+    storageBucket: "noob-meet.appspot.com",
+    messagingSenderId: "37247110429",
+    appId: "1:37247110429:web:9951dc18d29c5ada95e5f4",
+    measurementId: "G-XXS6DCYNMQ"
 };
 
 firebase.initializeApp(firebaseConfig);
