@@ -81,7 +81,7 @@ createBtn.addEventListener("click", async (e) => {
 
   let timerInterval;
   Swal.fire({ allowEscapeKey: false, allowEnterKey: false, allowOutsideClick: false, 
-    background: "rgba(48, 48, 48)", position: "top", title: `Creating room`, 
+    background: "#242526", position: "top", title: `Creating room`, 
     timer: 2000, 
     didOpen: () => { Swal.showLoading(); timerInterval = setInterval(() => {
       let roomName = document.getElementById("roomName").value.trim(); // set room name
@@ -130,7 +130,7 @@ function loadMeetings() {
       let meetdiv = `
       <div class="col-sm-6">
         <div class="panel">
-          <div style="background-color:#FFF8DC" class="panel-body p-t-10">
+          <div style="background-color:#e6e6e6; box-shadow: 8px 5px 8px 5px #24252670" class="panel-body p-t-10">
               <div class="media-main">
                   <div class="pull-right btn-group-sm">
                       <a href="${callLink}" class="btn btn-success tooltips" data-placement="top" data-toggle="tooltip" data-original-title="Edit">
@@ -141,7 +141,7 @@ function loadMeetings() {
                       </a>
                   </div>
                   <div class="info">
-                      <h4>${doc.data().roomName}</h4>
+                      <h3>${doc.data().roomName}</h3>
                       <i style="font-size:0.75em">${doc.data().roomId}</i>
                       <i style="font-size:0.85em">- by ${doc.data().createdBy}</i>
                       <p class="text-muted">${doc.data().date}</p>
@@ -155,7 +155,6 @@ function loadMeetings() {
                     copy chat link
                 </button>
               </div>
-              <hr>
           </div>
         </div>
       </div>

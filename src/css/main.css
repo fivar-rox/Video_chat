@@ -3,7 +3,10 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
-  color: #9370db;
+  color: #FF8C00;
+  background-color: #242526;
+  background-image : url("../img/main_background.jpg");
+  background-size: cover;
   line-height: 1.8;
 }
 
@@ -13,6 +16,8 @@ body, html {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+  background-color: #18191A;
+  
 }
 
 .cta-inner {
@@ -42,8 +47,8 @@ body, html {
   }
 
   .section-inner {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .cta-split {
@@ -274,11 +279,11 @@ textarea {
 
 .button-primary {
   color: #f9faff;
-  background-color: #376df9;
+  background-color:#d87700f9;
 }
 
 .button-primary:hover {
-  background-color: #4678f9;
+  background-color: #db7800;
 }
 
 .button-primary.is-loading::after {

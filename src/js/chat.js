@@ -18,7 +18,7 @@ const firestore = firebase.firestore();
 const isWebRTCSupported = DetectRTC.isWebRTCSupported;
 const imgUrl = "https://eu.ui-avatars.com/api";
 
-let background = "rgba(48, 48, 48)"; 
+let background = "#242526"; 
 let port = 4000; // must be same of server 
 let server = "http" + (location.hostname == "localhost" ? "" : "s") + "://" + location.hostname + (location.hostname == "localhost" ? ":" + port : "")
 let roomId = location.pathname.substring(6);

@@ -19,7 +19,7 @@ const isWebRTCSupported = DetectRTC.isWebRTCSupported;
 const imgUrl = "https://eu.ui-avatars.com/api";
 const fileInput = "*"; // allows all file extensions
 
-let background = "rgba(48, 48, 48)"; 
+let background = "#242526"; 
 let port = 4000; // must be same of server 
 let server = "http" + (location.hostname == "localhost" ? "" : "s") + "://" + location.hostname + (location.hostname == "localhost" ? ":" + port : "")
 let roomId = location.pathname.substring(6);
@@ -582,7 +582,7 @@ function loadMyMedia(stream) {
   // my hand status 
   myHandStatusIcon.setAttribute("id", "myHandStatusIcon");
   myHandStatusIcon.className = "fas fa-hand-paper";
-  myHandStatusIcon.style.setProperty("color", "#9477CB");
+  myHandStatusIcon.style.setProperty("color", "#d87700f9");
   tippy(myHandStatusIcon, { content: "Raised", });
   // my video status 
   myVideoStatusIcon.setAttribute("id", "myVideoStatusIcon");
@@ -677,7 +677,7 @@ function loadOthersMediaStream(event, peers, peer_id) {
   othersInfo.appendChild(peerVideoText);
   // others hand status 
   othersHandStatusIcon.setAttribute("id", peer_id + "_handStatus");
-  othersHandStatusIcon.style.setProperty("color", "#9477CB");
+  othersHandStatusIcon.style.setProperty("color", "#d87700f9");
   othersHandStatusIcon.className = "fas fa-hand-paper";
   tippy(othersHandStatusIcon, { content: "Participant hand is RAISED", });
   // others video status
