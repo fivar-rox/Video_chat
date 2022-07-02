@@ -2,8 +2,9 @@
 <h3> Intro </h3> 
 This is a webRTC based video chatting web application. The users can register and get logged in to their user page. They can either create a new room or use their previous rooms to join a call and chat. This implementation also consists of a real time chat and file share functionality.
 
-#
-[Project deployed link](https://evening-basin-41332.herokuapp.com/)<br /> (not Functional Yet, Use getting started for more info)
+# Deployed link
+[noobmeet.herokuapp.com](https://noobmeet.herokuapp.com/)<br /> 
+(Calls and chats are functional, but a small bug while deploying, becasue of NO "Access-Control-Allow-Origin" on icon package script, fonts-awesome is blocked. So u won't be able to access any incall-features in the deployement. To use all the features, follow the steps in "Getting Started" and run it on a local machine.)
 
 # Features and Functionalities
 * Unlimited number of rooms 
@@ -20,7 +21,7 @@ This is a webRTC based video chatting web application. The users can register an
 * Full Screen Mode on double click on the video  
 
 # Demo (Not functional yet)
-* Open https://evening-basin-41332.herokuapp.com/
+* Open https://noobmeet.herokuapp.com/
 * Create an account
 * Set a meeting name to create your room
 * Click on call button and give access to camera and microphone to join call
@@ -65,6 +66,7 @@ A more detailed description and ScreenShots will be uploaded soon. (With video t
   * cd video-call
 
 * Install dependencies
+  * npm init
   * npm install
 * Start the server
   * npm start
