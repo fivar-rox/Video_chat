@@ -4,7 +4,7 @@ This is a webRTC based video chatting web application. The users can register an
 
 # Deployed link
 [noobmeet.herokuapp.com](https://noobmeet.herokuapp.com/)<br /> 
-(Calls and chats are functional, but a small bug while deploying, becasue of NO "Access-Control-Allow-Origin" on icon package script, fonts-awesome is blocked. So u won't be able to access any incall-features in the deployement. To use all the features, follow the steps in "Getting Started" and run it on a local machine.)
+(Calls and chats are functional, but becasue of NO "Access-Control-Allow-Origin" on icon package script, fonts-awesome is blocked. So u won't be able to access any incall-features in the deployement. To use all the features, follow the steps in "Getting Started" and run it on a local machine, no problems should arise, but depending on the time, the script source may change, so u have to manually change the source in local machine)
 
 # Features and Functionalities
 * Unlimited number of rooms 
@@ -19,14 +19,6 @@ This is a webRTC based video chatting web application. The users can register an
 * Screen Sharing 
 * Recording your stream, audio and video 
 * Full Screen Mode on double click on the video  
-
-# Demo (Not functional yet)
-* Open https://noobmeet.herokuapp.com/
-* Create an account
-* Set a meeting name to create your room
-* Click on call button and give access to camera and microphone to join call
-* Click on chat button to chat before the meeting starts and as well as after the meeting ends
-* Share the room link for others to join 
 
 # ScreenShots
 * Login and Register page
@@ -58,6 +50,14 @@ This is a webRTC based video chatting web application. The users can register an
 ![image](https://user-images.githubusercontent.com/72460532/177011551-15db10a1-ece1-4b9e-af36-86899d273424.png)
 
 A more detailed description and ScreenShots will be uploaded soon. (With video turned on too :-)).
+
+# Demo (Not functional as now)
+* Open https://noobmeet.herokuapp.com/
+* Create an account
+* Set a meeting name to create your room
+* Click on call button and give access to camera and microphone to join call
+* Click on chat button to chat before the meeting starts and as well as after the meeting ends
+* Share the room link for others to join 
 
 # Getting Started
 * You need to have Node.js installed
